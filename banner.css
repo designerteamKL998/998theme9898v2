@@ -1,0 +1,96 @@
+﻿/*=========================================
+            HERO
+=========================================*/
+
+#hero-banner {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+/* LEFT */
+
+.hero-main {
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+    .hero-main img {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+/* RIGHT */
+
+.hero-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.promo-slider {
+    overflow: hidden;
+}
+
+.promo-track {
+    display: flex;
+    gap: 12px;
+    transition: 0.45s ease;
+}
+
+.promo-page {
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.promo-item {
+   flex:0 0 33.333%;
+   border-radius:14px;
+}
+
+    .promo-item img {
+        width: 100%;
+        height: 330px;
+        object-fit: cover;
+        display: block;
+        border-radius:14px;
+    }
+
+.promo-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+    .promo-dots span {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #ff6b6b;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+        .promo-dots span.active {
+            width: 28px;
+            border-radius: 20px;
+            background: #4bd3c7;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+

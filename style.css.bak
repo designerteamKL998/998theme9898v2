@@ -1,0 +1,509 @@
+@import url("../Default/style.css");
+
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+.clearboth {clear:both;}
+html {display:table;}
+body {display:table-row;}
+html,body{
+	height:100%;
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+	font-family:verdana;
+}
+textarea,
+input[type=text],
+input[type=password]{ border:1px solid #333333;  -webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px; padding:2px;}
+ 
+
+#theme{
+	display:table-cell;
+	height:100%;
+	width:100%;
+	background: #114e86;
+}
+
+.themetbl {display:table;}
+.themetblrow {display:table-row;}
+.themetblcell {display:table-cell;}
+.themetblwidth {width:100%;}
+.themetblheight {height:100%;}
+.theme-container-box { width:100%; height:500px; }
+
+#theme-frame{
+	height:100%;
+	margin:auto;
+	width:100%;
+	background:#ffffff;
+	border-left:0px solid #efefef;
+	border-right:0px solid #efefef;
+}
+
+#theme-header {	
+	height:100px;
+	background: #114e86;
+}
+#theme-header-content { position:relative; }
+
+#theme-menu{ height:32px; z-index:500; position:relative;}
+#theme-menu #cmsmenu {z-index:999;}
+#theme-container { clear:both; position:relative;}
+#theme-footer {
+	height:30px; 
+	clear:both; 
+	padding:10px; 
+	border-top:1px solid #888888; 
+	text-align:center;
+	vertical-align:middle;
+}
+
+#theme-title {  padding-left:10px; display:none;}
+#theme-lang {position:absolute; left:0px; top:0px; display:none;}
+#theme-header-link {position:absolute; right:10px; top:0px;}
+#theme-header-logo {position:absolute; left:0px; top:0px;}
+#theme-header-logo img { width:120px;}
+
+#theme-nav { clear:both; padding:10px; background:#efefef; display:none; }
+#theme-nav ul {margin:0px; padding:0px; list-style:none;  }
+#theme-nav ul li { display:inline; }
+#theme-nav ul li a,
+#theme-nav ul li a:visited { color:#000000; text-decoration:none; font-weight:bold; padding:0px 10px 0px 10px; background:url(icon/arrow-v.png) left no-repeat; }
+
+/******************************************************* CSSMENU ******************************************************/
+
+#cssmenu {
+}
+#cssmenu > ul > li > a > img {
+    height: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+    #btnMenu-b {
+        display: none;
+    }
+    #btnMenu {
+        display: none;
+    }
+    #divHeader-menu {
+        background-color: #fff;
+    }
+
+    #cssmenu {
+        z-index: 9;
+        height: 100%;
+        position: relative;
+    }
+    #cssmenu ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 100%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: static;
+    }
+    #cssmenu ul li {
+        float: none;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: static;
+    }
+    #cssmenu > ul > li > a,
+    #cssmenu > ul > li.has-sub > a {
+        border: 0;
+        color: #fff;
+        font-size: 13px;
+        text-transform: uppercase;
+        position: relative;
+        padding: 17px 20px;
+        padding-bottom: 17px;
+        white-space: nowrap;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    #cssmenu > ul > li.has-sub > a:after {
+        display: none;
+    }
+    #cssmenu > ul > li.active > a i,
+    #cssmenu > ul > li.active:hover > a i {
+        color: #edbd15;
+    }
+    /*#cssmenu ul li.active a, #cssmenu ul li.active:hover a { color: #edbd15; border-bottom: 2px solid #edbd15; }*/
+    #cssmenu > ul > li:hover > a {
+        color: #fff;
+    }
+    #cssmenu ul li a > img {
+        display: block;
+        margin: 0 auto 8px;
+    }
+    #cssmenu > ul > li > a i {
+        margin-right: 5px;
+        color: #888;
+    }
+    #cssmenu ul li a:hover i {
+        color: #edbd15;
+    }
+
+    #cssmenu:after {
+        top: -2px;
+        margin-left: 10vw;
+    }
+    #cssmenu:before {
+        bottom: -2px;
+        margin-right: 10vw;
+    }
+
+    #cssmenu ul ul {
+        left: 0 !important;
+        right: 0;
+        width: 100%;
+        margin: auto;
+        max-width: 1200px;
+        text-align: center;
+        display: none;
+        top: 100%;
+        height: auto;
+        font-size: 0;
+        text-align: left;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    #cssmenu ul > li:hover ul {
+        display: block;
+    }
+    #cssmenu ul ul li {
+        height: auto;
+        width: 15%;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        margin: 10px 0;
+        text-align: center;
+        color: #0185be;
+    }
+    #cssmenu ul ul li:hover:after {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    #cssmenu ul ul:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0px;
+        bottom: 0;
+        border-top: 1px solid #222;
+        margin: auto;
+        width: 100vw;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        margin-left: 50%;
+        background-color: #fff;
+        z-index: -1;
+    }
+    #cssmenu ul ul li a {
+        width: auto;
+        padding: 0 0;
+        background: none;
+        cursor: pointer;
+        color: #0185be !important;
+        font-size: 12px;
+        border: 0 !important;
+    }
+    #cssmenu ul ul li:hover {
+        background: transparent;
+    }
+    #cssmenu ul ul li:hover > a {
+        background: transparent;
+        color: #0185be !important;
+    }
+    #cssmenu ul ul li img {
+        width: 80%;
+    }
+    #cssmenu ul li:hover > ul > li {
+        height: auto;
+    }
+
+    #cssmenu {
+        z-index: 1;
+        margin-bottom: auto;
+    }
+    #cssmenu ul li {
+        float: none;
+        border-bottom: 0px solid #000;
+    }
+    #cssmenu ul li:hover {
+        background: transparent;
+        color: #0185be;
+    }
+    #cssmenu ul li:not(:first-child) {
+        border-top: 0px solid #555;
+    }
+    #cssmenu > ul > li > a {
+        border: 0;
+    }
+    #cssmenu > ul > li > a:hover {
+        color: #fec40c;
+    }
+    #cssmenu > ul > li > a i {
+        margin-right: 5px;
+        color: #888;
+    }
+    #cssmenu > ul > li.active {
+        background-color: transparent;
+        font-weight: bold;
+    }
+    #cssmenu > ul > li.active a,
+    #cssmenu > ul > li.active i {
+        color: #fec40c;
+    }
+
+    #cssmenu ul:hover li.active a:after {
+        display: none;
+    }
+    #cssmenu ul li.active:hover a:after {
+        display: block;
+    }
+
+    /*#cssmenu > ul > li.active > a:after, #cssmenu > ul > li:hover > a:after, #cssmenu > ul > li.has-sub:hover > a:after { content: ''; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; z-index: -1; transform: skewX(342deg) translateX(2px); pointer-events: none; background: linear-gradient(to bottom, #333, #111); border-bottom: 3px solid #e3c054; width: auto; height: auto; border-right: 0; }*/
+    #cssmenu > ul > li.active > a img {
+        transform: scale(1.1);
+    }
+    #cssmenu ul li.active a,
+    #cssmenu ul li.active:hover a {
+        border: 0;
+    }
+    #cssmenu ul li a img {
+        transition: transform 0.2s ease-in-out;
+    }
+    #cssmenu ul li:hover a img {
+        transform: scale(1.1);
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1024px) {
+    #cssmenu > ul > li > a,
+    #cssmenu > ul > li.has-sub > a {
+    }
+    #cssmenu > ul > li > a i {
+    }
+    #cssmenu ul ul {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    #btnMenu {
+        padding: 10px 15px;
+        background-color: #222;
+        border: 1px solid #080808;
+        border-left: 0;
+        border-right: 0;
+        text-transform: uppercase;
+    }
+    #btnMenu-b {
+        display: none;
+    }
+    #btnMenu-b:active {
+        background-color: #222;
+    }
+
+    #divHeader-menu > .wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #css-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 999;
+        -webkit-transition: 0.5s ease-in-out transform;
+        transition: 0.5s ease-in-out transform;
+        -webkit-transform: translate(-320px);
+        transform: translate(-320px);
+        pointer-events: none;
+    }
+    #css-container.active {
+        background-color: rgba(0, 0, 0, 0);
+        -webkit-transform: translate(-0px);
+        transform: translate(-0px);
+        pointer-events: auto;
+    }
+    #css-container:after {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        -webkit-transition: width 0.5s ease-in-out;
+        transition: width 0.5s ease-in-out;
+    }
+    #css-container.active:after {
+        width: 100%;
+    }
+    #css-container > #css-wrapper {
+        max-width: 320px;
+        width: 100%;
+        background-color: #333333;
+        padding: 0;
+        height: 100vh;
+        margin-left: 0;
+        position: relative;
+        z-index: 2;
+        overflow-x: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    #css-container > #css-wrapper:after {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 300px;
+        bottom: 0;
+        width: 20px;
+        height: 100%;
+        z-index: 2;
+        pointer-events: none;
+        margin: auto;
+        visibility: visible;
+        background: rgb(0, 0, 0);
+        background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    }
+
+    #cssmenu ul ul {
+        display: none;
+    }
+    #cssmenu ul li.has-sub a:after {
+        display: none;
+    }
+
+    #cssmenu-bottom {
+        padding: 15px 0;
+        margin-top: auto;
+    }
+    .menu-cr {
+        text-align: center;
+        color: #aaa;
+    }
+
+    #cssmenu > ul > li.active {
+        background: linear-gradient(to right, #333, #000);
+    }
+    #cssmenu > ul > li.active a:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 1px;
+        width: 5px;
+        pointer-events: none;
+        background: linear-gradient(to bottom, #057dff, #013b7a);
+    }
+    #cssmenu > ul > li.active a:before {
+    }
+    #cssmenu > ul > li > a > img {
+        height: 30px;
+        margin-right: 8px;
+    }
+    #cssmenu > ul > li > a {
+        padding: 15px 15px;
+        padding-left: 20px;
+    }
+    #cssmenu > ul > li.active > a {
+        color: #fff;
+    }
+}
+
+
+.w-100 {
+    width: 100%;
+}
+.d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.justify-content-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.justify-content-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.justify-content-end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.align-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+}
+.flex-direction-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+
+
+
+@media all 
+and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) 
+and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) 
+and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) 
+and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) 
+and (max-width: 1024px), only screen and (min-resolution: 192dpi) 
+and (max-width: 1024px), only screen and (min-resolution: 2dppx) 
+and (max-width: 1024px) {
+	#theme-frame{
+		width:99%;
+	}
+
+
+}

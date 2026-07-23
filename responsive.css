@@ -1,0 +1,720 @@
+﻿.mobile-bottom-nav {
+    display: none;
+}
+
+/* Tablet */
+@media (max-width:1024px) {
+    html,
+    body {
+        overflow: auto;
+    }
+
+    #theme {
+        height: auto;
+    }
+
+    #sidebar {
+        position: fixed;
+        top: 0;
+        left: -260px;
+        width: 260px;
+        height: 100vh;
+        z-index: 1000;
+        transition: .35s ease;
+        box-shadow: 0 0 25px rgba(0,0,0,.2);
+    }
+
+        #sidebar.active {
+            left: 0;
+            padding-bottom: 80px;
+        }
+
+    #page {
+        width: 100%;
+    }
+
+    #content {
+        padding: 15px;
+    }
+
+    #sidebarToggle {
+        display: none;
+    }
+
+    .mobile-bottom-nav {
+        display: flex;
+    }
+
+
+    .sidebar-logo {
+        padding: 0 15px;
+        display: none;
+    }
+
+    #sidebar.active .logo {
+        display: block;
+    }
+
+    .sidebar-switch {
+        padding: 15px;
+    }
+
+    .sidebar-promotion {
+        padding: 0 15px;
+    }
+
+    .sidebar-bottom {
+        padding: 15px;
+    }
+
+    .sidebar-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,.4);
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        z-index: 999;
+    }
+
+        .sidebar-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+    #sidebar.active .sidebar-logo {
+        justify-content: space-between;
+    }
+
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+        width: 110px;
+        margin-right: auto;
+    }
+
+    .mobile-bottom-nav {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 72px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #1A535C;
+        border-top: 1px solid rgba(78,205,196,.3);
+        box-shadow: 0 -6px 18px rgba(0,0,0,.12);
+        z-index: 9999;
+    }
+
+        .mobile-bottom-nav .nav-item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            text-decoration: none;
+            color: #4ECDC4;
+            font-size: 12px;
+            font-weight: 500;
+            transition: .25s;
+        }
+
+            .mobile-bottom-nav .nav-item i {
+                font-size: 24px;
+            }
+
+            .mobile-bottom-nav .nav-item:hover,
+            .mobile-bottom-nav .nav-item.active {
+                color: #EEFBEF;
+            }
+
+        .mobile-bottom-nav .deposit-btn {
+            position: relative;
+            top: -18px;
+            width: 64px;
+            height: 64px;
+            flex: none;
+            border-radius: 18px;
+            background: #FF6B6B;
+            color: #fff;
+            box-shadow: 0 8px 20px rgba(255,107,107,.35);
+        }
+
+            .mobile-bottom-nav .deposit-btn i {
+                font-size: 26px;
+            }
+
+            .mobile-bottom-nav .deposit-btn span {
+                color: #fff;
+            }
+
+        .mobile-bottom-nav #sidebarToggle {
+            background: transparent;
+        }
+
+    #header {
+        flex-wrap: wrap;
+    }
+
+    .header-search {
+        display: none;
+    }
+
+    .account-drawer {
+        width: 380px;
+    }
+
+    .view-all {
+        width: auto;
+        padding: 14px 30px;
+    }
+
+    #hero-banner {
+        display: block;
+    }
+
+    .promo-page {
+        grid-template-columns: repeat(3,1fr);
+        gap: 12px;
+    }
+
+    .promo-item {
+        flex: 0 0 calc((100% - 24px)/3);
+    }
+
+        .promo-item img {
+            height: 220px;
+        }
+
+    .hero-main {
+        display: none;
+    }
+
+    .hero-side {
+        width: 100%;
+    }
+
+    #game-category {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 10px 0 15px;
+        scroll-behavior: smooth;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+        #game-category::-webkit-scrollbar {
+            display: none;
+        }
+
+    .category-item {
+        flex: 0 0 105px;
+        min-width: 14%;
+        height: 72px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 12px;
+        padding: 10px;
+        white-space: nowrap;
+    }
+
+        .category-item img {
+            width: 22px;
+            height: 22px;
+        }
+
+        .category-item span {
+            font-size: 13px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .category-item.active {
+            background: #ff6767;
+            color: #fff;
+        }
+
+    .provider-section {
+        margin-bottom: 60px;
+    }
+
+    .mega-dropdown {
+        width: 450px;
+        right: 0;
+    }
+
+    .dropdown-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .game-layout {
+        gap: 16px;
+    }
+
+    .account-footer {
+        margin-bottom:80px;
+    }
+
+}
+
+/* Mobile */
+    @media (max-width:768px) {
+        .mobile-bottom-nav {
+            height: 65px;
+        }
+
+            .mobile-bottom-nav .deposit-btn {
+                width: 55px;
+                height: 55px;
+                top: -22px;
+            }
+
+            .mobile-bottom-nav .nav-item i {
+                font-size: 18px;
+            }
+
+            .mobile-bottom-nav .nav-item span {
+                font-size: 10px;
+            }
+
+        .header-icon.notihead {
+            display: none;
+        }
+
+        .mega-dropdown {
+            position: fixed;
+            top: 50px;
+            left: 15px;
+            right: 15px;
+            width: 80%;
+            padding: 15px;
+        }
+
+            .mega-dropdown::before {
+                display: none;
+            }
+
+
+        .dropdown-card {
+            min-height: 60px;
+            justify-content: flex-start;
+        }
+
+        .dropdown-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        #theme {
+            flex-direction: column;
+        }
+
+        #content {
+            padding: 15px;
+        }
+
+        .sidebar-logo img {
+            width: 105px;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 16px;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .wallet {
+            flex: 1;
+            padding: 0 0px 0px 16px;
+        }
+
+            .wallet a.deposit {
+                display: block;
+                border-radius: 0px 20px 20px 0px;
+                height: 41px;
+                padding-top: 8px;
+            }
+
+        .deposit {
+            display: none;
+        }
+
+            .deposit span {
+                display: none;
+            }
+
+        .account-drawer {
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .account-details {
+
+        }
+
+        .wallet-grid {
+        }
+
+        .account-grid {
+        }
+
+        .account-footer {
+            flex-direction: column;
+            gap: 15px;
+            align-items: stretch;
+        }
+
+        .logout-btn {
+            justify-content: center;
+        }
+
+        .support-float {
+            margin: auto;
+        }
+
+        .game-section {
+            margin: 30px 0px;
+        }
+
+        #game-category {
+            display: flex;
+            gap: 10px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            padding-bottom: 15px;
+            scroll-behavior: smooth;
+            scrollbar-width: thin;
+            scrollbar-color: #1d5d63 #d9ebe8;
+        }
+
+        .category-item {
+            flex: 0 0 95px;
+            min-width: 11%;
+            height: 68px;
+        }
+
+            .category-item img {
+                width: 20px;
+                height: 20px;
+            }
+
+            .category-item span {
+                font-size: 12px;
+            }
+
+        /* Scrollbar */
+        #game-category::-webkit-scrollbar {
+            display: block;
+            height: 12px;
+        }
+
+        #game-category::-webkit-scrollbar-track {
+            background: #d9ebe8;
+            border-radius: 999px;
+        }
+
+        #game-category::-webkit-scrollbar-thumb {
+            background: #1d5d63;
+            border-radius: 999px;
+            border: 2px solid #d9ebe8;
+        }
+
+            #game-category::-webkit-scrollbar-thumb:hover {
+                background: #16494e;
+            }
+
+
+
+
+        .section-title h2 {
+            font-size: 18px;
+        }
+
+        .section-title i {
+            font-size: 16px;
+            padding: 8px;
+        }
+
+
+        .provider-card {
+            flex: 0 0 130px;
+            padding: 12px;
+        }
+
+            .provider-card img {
+                height: 34px;
+            }
+
+        /* ===========================
+    HOT GAME
+=========================== */
+
+        .game-slider {
+            overflow: visible;
+        }
+
+        .game-track {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            overflow: visible;
+            transform: none !important;
+        }
+
+        .game-card {
+            flex: unset;
+            width: 100%;
+        }
+
+            /* Show 8 games only */
+            .game-card:nth-child(n+9) {
+                display: none;
+            }
+
+        /* Hide arrow */
+        .section-nav {
+            display: none;
+        }
+
+        .view-all {
+            width: 100%;
+            margin-top: 15px;
+        }
+
+
+        .promo-page {
+            grid-template-columns: 1fr;
+        }
+
+        .promo-item {
+            flex: 0 0 calc((100% - 24px)/1);
+        }
+
+            .promo-item img {
+                height: auto;
+                aspect-ratio: 16/9;
+            }
+
+        #mobile-search-placeholder {
+            margin: 15px 0;
+        }
+
+            #mobile-search-placeholder .header-search {
+                display: flex;
+                width: 100%;
+            }
+
+        .game-layout {
+            gap: 14px;
+            display:block;
+        }
+
+        .provider-grid {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-height: none;
+            padding-bottom: 6px;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            padding: 10px 0px;
+            margin: 5px 0px 11px;
+        }
+
+            .provider-grid::-webkit-scrollbar {
+                height: 5px;
+            }
+
+            .provider-grid::-webkit-scrollbar-track {
+                background: #edf7f4;
+                border-radius: 20px;
+            }
+
+            .provider-grid::-webkit-scrollbar-thumb {
+                background: #176c75;
+                border-radius: 20px;
+            }
+
+        .provider-item {
+            flex: 0 0 95px;
+            height: 60px;
+        }
+
+            .provider-item img {
+                max-width: 48px;
+            }
+
+            .provider-item span {
+                font-size: 10px;
+            }
+
+
+    }
+
+/* Small Mobile */
+@media (max-width:480px) {
+    .mobile-bottom-nav {
+        height: 60px;
+    }
+
+    .dropdown-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mega-dropdown {
+        top: 100px;
+    }
+
+        .mobile-bottom-nav .deposit-btn {
+            width: 50px;
+            height: 50px;
+            top: -20px;
+        }
+
+        .mobile-bottom-nav .nav-item i {
+            font-size: 16px;
+        }
+
+        .mobile-bottom-nav .nav-item span {
+            font-size: 9px;
+        }
+    #content {
+        padding: 12px;
+    }
+
+    .sidebar-logo {
+        height: 60px;
+    }
+
+        .sidebar-logo img {
+            width: 95px;
+        }
+
+    .sidebar-switch button {
+        height: 36px;
+        font-size: 13px;
+    }
+
+    .sidebar-menu a {
+        height: 44px;
+        padding: 0 12px;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .promo {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .language-btn {
+        height: 42px;
+    }
+
+    .profile-btn {
+        display: none;
+    }
+
+    .welcome-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .welcome-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .wallet-grid,
+    .account-grid {
+
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .section-nav {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .category-item {
+        min-width: 130px;
+        font-size: 13px;
+    }
+
+    .game-card {
+        flex: 0 0 110px;
+    }
+
+    .provider-card {
+        flex: 0 0 120px;
+    }
+
+    .promo-page {
+        grid-template-columns: 1fr;
+    }
+
+    .promo-item img {
+        height: auto;
+    }
+
+    #header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobile-logo {
+        flex-shrink: 1;
+        max-width: 25%;
+        height: auto;
+    }
+
+    .header-right {
+        flex-shrink: 0;
+    }
+
+    .provider-grid {
+        grid-template-columns: repeat(3,1fr);
+        gap: 8px;
+    }
+
+    .provider-item {
+        height: 56px;
+    }
+
+        .provider-item img {
+            max-width: 42px;
+        }
+
+        .provider-item span {
+            font-size: 9px;
+        }
+
+
+}
