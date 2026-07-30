@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <div>
     <div id="theme">
         <!-- =========================
                 SIDEBAR
@@ -29,10 +30,6 @@
             <!-- Logo -->
             <div class="sidebar-logo">
                 <img src="images/logo-testing.png" alt="Logo" class="logo" />
-
-                <button id="sidebarToggle" class="mobile-menu">
-                    <i class="fas fa-bars"></i>
-                </button>
             </div>
 
             <!-- Sports / Casino -->
@@ -58,7 +55,12 @@
             </div>
 
             <!-- Games -->
-            <h4 class="menu-title">GAMES</h4>
+            <div class="menu-header">
+                <h4 class="menu-title">GAMES</h4>
+                <button id="sidebarToggle" class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
 
             <ul class="sidebar-menu">
                 <li>
@@ -269,13 +271,6 @@
 
 
                 <img src="images/logo-testing.png" class="mobile-logo">
-
-                <!-- Search -->
-                <div class="header-search">
-                    <i class="fas fa-search"></i>
-
-                    <input type="text" placeholder="Search games..." />
-                </div>
 
                 <!-- Right -->
 
@@ -639,6 +634,14 @@
                                 <a href="#" class="promo-item">
                                     <img src="images/topslide03.png" />
                                 </a>
+
+                                <a href="#" class="promo-item">
+                                    <img src="images/topslide03.png" />
+                                </a>
+
+                                <a href="#" class="promo-item">
+                                    <img src="images/topslide02.png" />
+                                </a>
                             </div>
                         </div>
 
@@ -646,324 +649,357 @@
                     </div>
                 </section>
 
-                <!-- Category -->
-                <section id="game-category">
-                    <a href="" class="category-item active">
-                        <img src="images/iconmenu/boxicons_hot-filled.png" />
-                        <span>Hot</span>
-                    </a>
+                <div class="category-wrapper">
+                    <!-- Category -->
+                    <section id="game-category">
+                        <a href="" class="category-item active">
+                            <img src="images/iconcat/Untitled-1_0007_hot.png" />
+                            <span>Hot</span>
+                        </a>
 
-                    <a href="" class="category-item">
-                        <img src="images/iconmenu/ix_folder-new-filled.png" />
-                        <span>New Games</span>
-                    </a>
+                        <a href="" class="category-item">
+                            <img src="images/iconcat/Untitled-1_0006_new.png" />
+                            <span>New Games</span>
+                        </a>
 
-                    <a href="" class="category-item">
-                        <img src="images/iconmenu/iconamoon_heart-fill.png" />
-                        <span>Fav Games</span>
-                    </a>
+                        <a href="" class="category-item">
+                            <img src="images/iconcat/Untitled-1_0005_fav.png" />
+                            <span>Fav Games</span>
+                        </a>
 
-                    <a href="" class="category-item">
-                        <img src="images/iconmenu/iconslot.png" />
-                        <span>Slot Games</span>
-                    </a>
+                        <a href="" class="category-item">
+                            <img src="images/iconcat/Untitled-1_0004_slot.png" />
+                            <span>Slot Games</span>
+                        </a>
 
-                    <a href="" class="category-item">
-                        <img src="images/iconmenu/iconcasino.png" />
-                        <span>Live Casino</span>
-                    </a>
+                        <a href="" class="category-item">
+                            <img src="images/iconcat/Untitled-1_0003_casinolive.png" />
+                            <span>Live Casino</span>
+                        </a>
 
-                    <a href="" class="category-item">
-                        <img src="images/iconmenu/iconsport.png" />
-                        <span>Sportsbook</span>
-                    </a>
+                        <a href="" class="category-item">
+                            <img src="images/iconcat/Untitled-1_0002_sport.png" />
+                            <span>Sportsbook</span>
+                        </a>
 
-                    <a href="" class="category-item">
-                        <img src="images/iconmenu/iconlotto.png" />
-                        <span>Lottery</span>
-                    </a>
+                        <a href="" class="category-item">
+                            <img src="images/iconcat/Untitled-1_0001_lotto.png" />
+                            <span>Lottery</span>
+                        </a>
 
-                    <a href="" class="category-item">
-                        <img src="images/iconmenu/fluent_board-games-20-filled.png" />
-                        <span>Other Games</span>
-                    </a>
-                </section>
-                <div id="mobile-search-placeholder"></div>
+                        <a href="" class="category-item">
+                            <img src="images/iconcat/Untitled-1_0000_other.png" />
+                            <span>Other Games</span>
+                        </a>
 
-                <!-- Hot Games -->
-                <section class="game-section">
-                    <div class="section-header">
-                        <div class="section-title">
-                            <i class="fas fa-fire"></i>
-                            <h2>Hot Games</h2>
-                        </div>
-
-                        <div class="section-nav">
-                            <button class="game-prev">
-                                <i class="fas fa-chevron-left"></i>
-                            </button>
-
-                            <button class="game-next">
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
-                        </div>
+                        
+                    </section>
+                    <!-- Search dekstop -->
+                    <div class="header-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search..." />
+                    </div>
+                    <div id="mobile-search-placeholder"></div>
                     </div>
 
-                    <div class="game-slider">
-                        <div class="game-track">
-                            <a href="#" class="game-card hot new">
-                                <img src="images/hot/game1.jpg" alt="" />
-                                <span class="game-name">Pragmatic Play</span>
-                            </a>
 
-                            <a href="#" class="game-card hot">
-                                <img src="images/hot/game2.jpg" alt="" />
-                                <span class="game-name">Evolution</span>
-                            </a>
+                    
 
-                            <a href="#" class="game-card hot new">
-                                <img src="images/hot/game3.jpg" alt="" />
-                                <span class="game-name">JILI</span>
-                            </a>
+                    <!-- Hot Games -->
+                    <section class="game-section">
+                        <div class="section-header">
+                            <div class="section-title">
+                                <i class="fas fa-fire"></i>
+                                <h2>Hot Games</h2>
+                            </div>
 
-                            <a href="#" class="game-card hot">
-                                <img src="images/hot/game4.jpg" alt="" />
-                                <span class="game-name">PG Soft</span>
-                            </a>
+                            <div class="section-nav">
+                                <button class="game-prev">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
 
-                            <a href="#" class="game-card hot">
-                                <img src="images/hot/game5.jpg" alt="" />
-                                <span class="game-name">Microgaming</span>
-                            </a>
-
-                            <a href="#" class="game-card hot">
-                                <img src="images/hot/game6.jpg" alt="" />
-                                <span class="game-name">CQ9</span>
-                            </a>
-
-                            <a href="#" class="game-card hot">
-                                <img src="images/hot/game1.jpg" alt="" />
-                                <span class="game-name">Pragmatic Play</span>
-                            </a>
-
-                            <a href="#" class="game-card hot">
-                                <img src="images/hot/game2.jpg" alt="" />
-                                <span class="game-name">Evolution</span>
-                            </a>
-
-                            <a href="#" class="game-card hot">
-                                <img src="images/hot/game3.jpg" alt="" />
-                                <span class="game-name">JILI</span>
-                            </a>
-
-                            <a href="#" class="game-card hot">
-                                <img src="images/hot/game4.jpg" alt="" />
-                                <span class="game-name">PG Soft</span>
-                            </a>
-
-                            <a href="#" class="game-card hot">
-                                <img src="images/hot/game5.jpg" alt="" />
-                                <span class="game-name">Microgaming</span>
-                            </a>
-
-                            <a href="#" class="game-card hot">
-                                <img src="images/hot/game6.jpg" alt="" />
-                                <span class="game-name">CQ9</span>
-                            </a>
-
-                            <a href="#" class="game-card hot">
-                                <img src="images/hot/game7.jpg" alt="" />
-                                <span class="game-name">Pragmatic Play</span>
-                            </a>
-
-                            <a href="#" class="game-card hot">
-                                <img src="images/hot/game2.jpg" alt="" />
-                                <span class="game-name">Evolution</span>
-                            </a>
-
-                            <a href="#" class="game-card hot">
-                                <img src="images/hot/game3.jpg" alt="" />
-                                <span class="game-name">JILI</span>
-                            </a>
-
-                            <a href="#" class="game-card hot">
-                                <img src="images/hot/game4.jpg" alt="" />
-                                <span class="game-name">PG Soft</span>
-                            </a>
-
-                            <a href="#" class="game-card hot">
-                                <img src="images/hot/game5.jpg" alt="" />
-                                <span class="game-name">Microgaming</span>
-                            </a>
-
-                            <a href="#" class="game-card hot">
-                                <img src="images/hot/game6.jpg" alt="" />
-                                <span class="game-name">CQ9</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <a href="#" class="view-all">
-                        View All
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </section>
-
-                <!-- Slot -->
-                <section class="game-section">
-                    <div class="section-header">
-                        <div class="section-title">
-                            <i class="fas fa-coins"></i>
-                            <h2>Slot Games</h2>
-                        </div>
-
-                        <div class="section-nav">
-                            <button class="game-prev"><i class="fas fa-chevron-left"></i></button>
-                            <button class="game-next"><i class="fas fa-chevron-right"></i></button>
-                        </div>
-                    </div>
-
-                    <div class="game-layout">
-
-                        <div class="provider-grid">
-
-                            <button class="provider-item active" data-provider="all">
-                                <img src="images/logolay/buttonalllogo.png">
-                                <span>All</span>
-                            </button>
-
-                            <button class="provider-item" data-provider="evolution">
-                                <img src="images/logolay/spribelogohome.png">
-                                <span>Spribe</span>
-                            </button>
-
-                            <button class="provider-item" data-provider="wm">
-                                <img src="images/logolay/ptgaminglogohome.png">
-                                <span>PT Gaming</span>
-                            </button>
-
-                            <button class="provider-item" data-provider="sa">
-                                <img src="images/logolay/playngologohome.png">
-                                <span>Play n Go</span>
-                            </button>
-
-                            <button class="provider-item" data-provider="allbet">
-                                <img src="images/logolay/nextspinlogohome.png">
-                                <span>Nextspin</span>
-                            </button>
-
-                            <button class="provider-item" data-provider="dream">
-                                <img src="images/logolay/pegasuslogohome.png">
-                                <span>Pegasus</span>
-                            </button>
-
-                            <button class="provider-item" data-provider="pragmatic">
-                                <img src="images/logolay/nolimitlogo.png">
-                                <span>No limit</span>
-                            </button>
-
-                            <button class="provider-item" data-provider="hacksaw">
-                                <img src="images/logolay/netentlogohome.png">
-                                <span>Netent</span>
-                            </button>
-
+                                <button class="game-next">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
                         </div>
 
                         <div class="game-slider">
                             <div class="game-track">
-
-                                <!-- slot game -->
-                                <a href="#" class="game-card hot new" data-provider="hacksaw">
+                                <a href="#" class="game-card hot new">
                                     <img src="images/hot/game1.jpg" alt="" />
                                     <span class="game-name">Pragmatic Play</span>
                                 </a>
 
-                                <a href="#" class="game-card hot" data-provider="pragmatic">
+                                <a href="#" class="game-card hot">
                                     <img src="images/hot/game2.jpg" alt="" />
                                     <span class="game-name">Evolution</span>
                                 </a>
 
-                                <a href="#" class="game-card new" data-provider="hacksaw">
+                                <a href="#" class="game-card hot new">
                                     <img src="images/hot/game3.jpg" alt="" />
                                     <span class="game-name">JILI</span>
                                 </a>
 
-                                <a href="#" class="game-card" data-provider="allbet">
+                                <a href="#" class="game-card hot">
                                     <img src="images/hot/game4.jpg" alt="" />
                                     <span class="game-name">PG Soft</span>
                                 </a>
 
-                                <a href="#" class="game-card hot new" data-provider="allbet">
+                                <a href="#" class="game-card hot">
                                     <img src="images/hot/game5.jpg" alt="" />
                                     <span class="game-name">Microgaming</span>
                                 </a>
 
-                                <a href="#" class="game-card" data-provider="wm">
+                                <a href="#" class="game-card hot">
                                     <img src="images/hot/game6.jpg" alt="" />
                                     <span class="game-name">CQ9</span>
                                 </a>
 
-                                <a href="#" class="game-card hot" data-provider="allbet">
+                                <a href="#" class="game-card hot">
                                     <img src="images/hot/game1.jpg" alt="" />
                                     <span class="game-name">Pragmatic Play</span>
                                 </a>
 
-                                <a href="#" class="game-card" data-provider="sa">
+                                <a href="#" class="game-card hot">
                                     <img src="images/hot/game2.jpg" alt="" />
                                     <span class="game-name">Evolution</span>
                                 </a>
 
-                                <a href="#" class="game-card" data-provider="sa">
+                                <a href="#" class="game-card hot">
                                     <img src="images/hot/game3.jpg" alt="" />
                                     <span class="game-name">JILI</span>
                                 </a>
 
-                                <a href="#" class="game-card" data-provider="allbet">
+                                <a href="#" class="game-card hot">
                                     <img src="images/hot/game4.jpg" alt="" />
                                     <span class="game-name">PG Soft</span>
                                 </a>
 
-                                <a href="#" class="game-card hot" data-provider="wm">
+                                <a href="#" class="game-card hot">
                                     <img src="images/hot/game5.jpg" alt="" />
                                     <span class="game-name">Microgaming</span>
                                 </a>
 
-                                <a href="#" class="game-card" data-provider="hacksaw">
+                                <a href="#" class="game-card hot">
                                     <img src="images/hot/game6.jpg" alt="" />
                                     <span class="game-name">CQ9</span>
                                 </a>
 
-                                <a href="#" class="game-card new" data-provider="pragmatic">
-                                    <img src="images/hot/game1.jpg" alt="" />
+                                <a href="#" class="game-card hot">
+                                    <img src="images/hot/game7.jpg" alt="" />
                                     <span class="game-name">Pragmatic Play</span>
                                 </a>
 
-                                <a href="#" class="game-card" data-provider="allbet">
+                                <a href="#" class="game-card hot">
                                     <img src="images/hot/game2.jpg" alt="" />
                                     <span class="game-name">Evolution</span>
                                 </a>
 
-                                <a href="#" class="game-card" data-provider="sa">
+                                <a href="#" class="game-card hot">
                                     <img src="images/hot/game3.jpg" alt="" />
                                     <span class="game-name">JILI</span>
                                 </a>
 
-                                <a href="#" class="game-card new" data-provider="sa">
+                                <a href="#" class="game-card hot">
                                     <img src="images/hot/game4.jpg" alt="" />
                                     <span class="game-name">PG Soft</span>
                                 </a>
 
-                                <a href="#" class="game-card" data-provider="allbet">
-                                    <img src="images/hot/game5.jpg" alt="" />
-                                    <span class="game-name">Microgaming</span>
+                                <a href="#" class="game-card hot">
+                                    <img src="images/hot/game3.jpg" alt="" />
+                                    <span class="game-name">JILI</span>
                                 </a>
 
-                                <a href="#" class="game-card" data-provider="pragmatic">
+                                <a href="#" class="game-card hot">
                                     <img src="images/hot/game6.jpg" alt="" />
                                     <span class="game-name">CQ9</span>
                                 </a>
+
                             </div>
                         </div>
+
+                        <a href="#" class="view-all">
+                            View All
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </section>
+
+                    <!-- Slot -->
+                    <section class="game-section">
+                        <div class="section-header">
+                            <div class="section-title">
+                                <i class="fas fa-coins"></i>
+                                <h2>Slot Games</h2>
+                            </div>
+
+                            <div class="section-nav">
+                                <button class="game-prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="game-next"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="game-layout">
+
+                            <div class="provider-grid">
+
+                                <button class="provider-item active" data-provider="all">
+                                    <img src="images/logolay/buttonalllogo.png">
+                                    <span>All</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="evolution">
+                                    <img src="images/logolay/spribelogohome.png">
+                                    <span>Spribe</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="wm">
+                                    <img src="images/logolay/ptgaminglogohome.png">
+                                    <span>PT Gaming</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="sa">
+                                    <img src="images/logolay/playngologohome.png">
+                                    <span>Play n Go</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="allbet">
+                                    <img src="images/logolay/nextspinlogohome.png">
+                                    <span>Nextspin</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="dream">
+                                    <img src="images/logolay/pegasuslogohome.png">
+                                    <span>Pegasus</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="pragmatic">
+                                    <img src="images/logolay/nolimitlogo.png">
+                                    <span>No limit</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="hacksaw">
+                                    <img src="images/logolay/netentlogohome.png">
+                                    <span>Netent</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="wm">
+                                    <img src="images/logolay/ptgaminglogohome.png">
+                                    <span>PT Gaming</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="sa">
+                                    <img src="images/logolay/playngologohome.png">
+                                    <span>Play n Go</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="allbet">
+                                    <img src="images/logolay/nextspinlogohome.png">
+                                    <span>Nextspin</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="dream">
+                                    <img src="images/logolay/pegasuslogohome.png">
+                                    <span>Pegasus</span>
+                                </button>
+
+                            </div>
+
+                            <div class="game-slider">
+                                <div class="game-track">
+
+                                    <!-- slot game -->
+                                    <a href="#" class="game-card hot new" data-provider="hacksaw">
+                                        <img src="images/hot/game1.jpg" alt="" />
+                                        <span class="game-name">Pragmatic Play</span>
+                                    </a>
+
+                                    <a href="#" class="game-card hot" data-provider="pragmatic">
+                                        <img src="images/hot/game2.jpg" alt="" />
+                                        <span class="game-name">Evolution</span>
+                                    </a>
+
+                                    <a href="#" class="game-card new" data-provider="hacksaw">
+                                        <img src="images/hot/game3.jpg" alt="" />
+                                        <span class="game-name">JILI</span>
+                                    </a>
+
+                                    <a href="#" class="game-card" data-provider="allbet">
+                                        <img src="images/hot/game4.jpg" alt="" />
+                                        <span class="game-name">PG Soft</span>
+                                    </a>
+
+                                    <a href="#" class="game-card hot new" data-provider="allbet">
+                                        <img src="images/hot/game5.jpg" alt="" />
+                                        <span class="game-name">Microgaming</span>
+                                    </a>
+
+                                    <a href="#" class="game-card" data-provider="wm">
+                                        <img src="images/hot/game6.jpg" alt="" />
+                                        <span class="game-name">CQ9</span>
+                                    </a>
+
+                                    <a href="#" class="game-card hot" data-provider="allbet">
+                                        <img src="images/hot/game1.jpg" alt="" />
+                                        <span class="game-name">Pragmatic Play</span>
+                                    </a>
+
+                                    <a href="#" class="game-card" data-provider="sa">
+                                        <img src="images/hot/game2.jpg" alt="" />
+                                        <span class="game-name">Evolution</span>
+                                    </a>
+
+                                    <a href="#" class="game-card" data-provider="sa">
+                                        <img src="images/hot/game3.jpg" alt="" />
+                                        <span class="game-name">JILI</span>
+                                    </a>
+
+                                    <a href="#" class="game-card" data-provider="allbet">
+                                        <img src="images/hot/game4.jpg" alt="" />
+                                        <span class="game-name">PG Soft</span>
+                                    </a>
+
+                                    <a href="#" class="game-card hot" data-provider="wm">
+                                        <img src="images/hot/game5.jpg" alt="" />
+                                        <span class="game-name">Microgaming</span>
+                                    </a>
+
+                                    <a href="#" class="game-card" data-provider="hacksaw">
+                                        <img src="images/hot/game6.jpg" alt="" />
+                                        <span class="game-name">CQ9</span>
+                                    </a>
+
+                                    <a href="#" class="game-card new" data-provider="pragmatic">
+                                        <img src="images/hot/game1.jpg" alt="" />
+                                        <span class="game-name">Pragmatic Play</span>
+                                    </a>
+
+                                    <a href="#" class="game-card" data-provider="allbet">
+                                        <img src="images/hot/game2.jpg" alt="" />
+                                        <span class="game-name">Evolution</span>
+                                    </a>
+
+                                    <a href="#" class="game-card" data-provider="sa">
+                                        <img src="images/hot/game3.jpg" alt="" />
+                                        <span class="game-name">JILI</span>
+                                    </a>
+
+                                    <a href="#" class="game-card new" data-provider="sa">
+                                        <img src="images/hot/game4.jpg" alt="" />
+                                        <span class="game-name">PG Soft</span>
+                                    </a>
+                                    <a href="#" class="game-card hot">
+                                        <img src="images/hot/game3.jpg" alt="" />
+                                        <span class="game-name">JILI</span>
+                                    </a>
+
+                                    <a href="#" class="game-card hot">
+                                        <img src="images/hot/game6.jpg" alt="" />
+                                        <span class="game-name">CQ9</span>
+                                    </a>
+
+                                </div>
+                            </div>
 
                         </div>
 
@@ -971,268 +1007,288 @@
                             View All
                             <i class="fas fa-arrow-right"></i>
                         </a>
-</section>
+                    </section>
 
-                <!-- Live Casino -->
-                <section class="game-section">
-                    <div class="section-header">
-                        <div class="section-title">
-                            <i class="fas fa-dice"></i>
+                    <!-- Live Casino -->
+                    <section class="game-section">
+                        <div class="section-header">
+                            <div class="section-title">
+                                <i class="fas fa-dice"></i>
 
-                            <h2>Live Casino</h2>
-                        </div>
+                                <h2>Live Casino</h2>
+                            </div>
 
-                        <div class="section-nav">
-                            <button class="game-prev">
-                                <i class="fas fa-chevron-left"></i>
-                            </button>
+                            <div class="section-nav">
+                                <button class="game-prev">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
 
-                            <button class="game-next">
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="game-layout">
-                        <div class="provider-grid">
-
-                            <button class="provider-item active" data-provider="all">
-                                <img src="images/logolay/buttonalllogo.png">
-                                <span>All</span>
-                            </button>
-
-                            <button class="provider-item" data-provider="evolution">
-                                <img src="images/logolay/spribelogohome.png">
-                                <span>Spribe</span>
-                            </button>
-
-                            <button class="provider-item" data-provider="wm">
-                                <img src="images/logolay/ptgaminglogohome.png">
-                                <span>PT Gaming</span>
-                            </button>
-
-                            <button class="provider-item" data-provider="sa">
-                                <img src="images/logolay/playngologohome.png">
-                                <span>Play n Go</span>
-                            </button>
-
-                            <button class="provider-item" data-provider="allbet">
-                                <img src="images/logolay/nextspinlogohome.png">
-                                <span>Nextspin</span>
-                            </button>
-
-                            <button class="provider-item" data-provider="dream">
-                                <img src="images/logolay/pegasuslogohome.png">
-                                <span>Pegasus</span>
-                            </button>
-
-                            <button class="provider-item" data-provider="pragmatic">
-                                <img src="images/logolay/nolimitlogo.png">
-                                <span>No limit</span>
-                            </button>
-
-                            <button class="provider-item" data-provider="hacksaw">
-                                <img src="images/logolay/netentlogohome.png">
-                                <span>Netent</span>
-                            </button>
-
-                        </div>
-
-
-                        <div class="game-slider">
-                            <div class="game-track">
-                                <a href="#" class="game-card">
-                                    <img src="images/hot/game3.jpg" alt="" />
-                                    <span class="game-name">Pragmatic Play</span>
-                                </a>
-
-                                <a href="#" class="game-card">
-                                    <img src="images/hot/game10.jpg" alt="" />
-                                    <span class="game-name">Evolution</span>
-                                </a>
-
-                                <a href="#" class="game-card">
-                                    <img src="images/hot/game3.jpg" alt="" />
-                                    <span class="game-name">JILI</span>
-                                </a>
-
-                                <a href="#" class="game-card">
-                                    <img src="images/hot/game4.jpg" alt="" />
-                                    <span class="game-name">PG Soft</span>
-                                </a>
-
-                                <a href="#" class="game-card new">
-                                    <img src="images/hot/game5.jpg" alt="" />
-                                    <span class="game-name">Microgaming</span>
-                                </a>
-
-                                <a href="#" class="game-card">
-                                    <img src="images/hot/game6.jpg" alt="" />
-                                    <span class="game-name">CQ9</span>
-                                </a>
-
-                                <a href="#" class="game-card hot">
-                                    <img src="images/hot/game1.jpg" alt="" />
-                                    <span class="game-name">Pragmatic Play</span>
-                                </a>
-
-                                <a href="#" class="game-card">
-                                    <img src="images/hot/game2.jpg" alt="" />
-                                    <span class="game-name">Evolution</span>
-                                </a>
-
-                                <a href="#" class="game-card">
-                                    <img src="images/hot/game3.jpg" alt="" />
-                                    <span class="game-name">JILI</span>
-                                </a>
-
-                                <a href="#" class="game-card new">
-                                    <img src="images/hot/game4.jpg" alt="" />
-                                    <span class="game-name">PG Soft</span>
-                                </a>
-
-                                <a href="#" class="game-card">
-                                    <img src="images/hot/game5.jpg" alt="" />
-                                    <span class="game-name">Microgaming</span>
-                                </a>
-
-                                <a href="#" class="game-card">
-                                    <img src="images/hot/game6.jpg" alt="" />
-                                    <span class="game-name">CQ9</span>
-                                </a>
-
-                                <a href="#" class="game-card hot">
-                                    <img src="images/hot/game1.jpg" alt="" />
-                                    <span class="game-name">Pragmatic Play</span>
-                                </a>
-
-                                <a href="#" class="game-card">
-                                    <img src="images/hot/game2.jpg" alt="" />
-                                    <span class="game-name">Evolution</span>
-                                </a>
-
-                                <a href="#" class="game-card hot">
-                                    <img src="images/hot/game3.jpg" alt="" />
-                                    <span class="game-name">JILI</span>
-                                </a>
-
-                                <a href="#" class="game-card">
-                                    <img src="images/hot/game4.jpg" alt="" />
-                                    <span class="game-name">PG Soft</span>
-                                </a>
-
-                                <a href="#" class="game-card hot">
-                                    <img src="images/hot/game5.jpg" alt="" />
-                                    <span class="game-name">Microgaming</span>
-                                </a>
-
-                                <a href="#" class="game-card hot">
-                                    <img src="images/hot/game6.jpg" alt="" />
-                                    <span class="game-name">CQ9</span>
-                                </a>
+                                <button class="game-next">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
                             </div>
                         </div>
-                    </div>
+
+                        <div class="game-layout">
+                            <div class="provider-grid">
+
+                                <button class="provider-item active" data-provider="all">
+                                    <img src="images/logolay/buttonalllogo.png">
+                                    <span>All</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="evolution">
+                                    <img src="images/logolay/spribelogohome.png">
+                                    <span>Spribe</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="wm">
+                                    <img src="images/logolay/ptgaminglogohome.png">
+                                    <span>PT Gaming</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="sa">
+                                    <img src="images/logolay/playngologohome.png">
+                                    <span>Play n Go</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="allbet">
+                                    <img src="images/logolay/nextspinlogohome.png">
+                                    <span>Nextspin</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="dream">
+                                    <img src="images/logolay/pegasuslogohome.png">
+                                    <span>Pegasus</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="pragmatic">
+                                    <img src="images/logolay/nolimitlogo.png">
+                                    <span>No limit</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="hacksaw">
+                                    <img src="images/logolay/netentlogohome.png">
+                                    <span>Netent</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="wm">
+                                    <img src="images/logolay/ptgaminglogohome.png">
+                                    <span>PT Gaming</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="sa">
+                                    <img src="images/logolay/playngologohome.png">
+                                    <span>Play n Go</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="allbet">
+                                    <img src="images/logolay/nextspinlogohome.png">
+                                    <span>Nextspin</span>
+                                </button>
+
+                                <button class="provider-item" data-provider="dream">
+                                    <img src="images/logolay/pegasuslogohome.png">
+                                    <span>Pegasus</span>
+                                </button>
+
+                            </div>
+
+
+                            <div class="game-slider">
+                                <div class="game-track">
+                                    <a href="#" class="game-card">
+                                        <img src="images/hot/game3.jpg" alt="" />
+                                        <span class="game-name">Pragmatic Play</span>
+                                    </a>
+
+                                    <a href="#" class="game-card">
+                                        <img src="images/hot/game10.jpg" alt="" />
+                                        <span class="game-name">Evolution</span>
+                                    </a>
+
+                                    <a href="#" class="game-card">
+                                        <img src="images/hot/game3.jpg" alt="" />
+                                        <span class="game-name">JILI</span>
+                                    </a>
+
+                                    <a href="#" class="game-card">
+                                        <img src="images/hot/game4.jpg" alt="" />
+                                        <span class="game-name">PG Soft</span>
+                                    </a>
+
+                                    <a href="#" class="game-card new">
+                                        <img src="images/hot/game5.jpg" alt="" />
+                                        <span class="game-name">Microgaming</span>
+                                    </a>
+
+                                    <a href="#" class="game-card">
+                                        <img src="images/hot/game6.jpg" alt="" />
+                                        <span class="game-name">CQ9</span>
+                                    </a>
+
+                                    <a href="#" class="game-card hot">
+                                        <img src="images/hot/game1.jpg" alt="" />
+                                        <span class="game-name">Pragmatic Play</span>
+                                    </a>
+
+                                    <a href="#" class="game-card">
+                                        <img src="images/hot/game2.jpg" alt="" />
+                                        <span class="game-name">Evolution</span>
+                                    </a>
+
+                                    <a href="#" class="game-card">
+                                        <img src="images/hot/game3.jpg" alt="" />
+                                        <span class="game-name">JILI</span>
+                                    </a>
+
+                                    <a href="#" class="game-card new">
+                                        <img src="images/hot/game4.jpg" alt="" />
+                                        <span class="game-name">PG Soft</span>
+                                    </a>
+
+                                    <a href="#" class="game-card">
+                                        <img src="images/hot/game5.jpg" alt="" />
+                                        <span class="game-name">Microgaming</span>
+                                    </a>
+
+                                    <a href="#" class="game-card">
+                                        <img src="images/hot/game6.jpg" alt="" />
+                                        <span class="game-name">CQ9</span>
+                                    </a>
+
+                                    <a href="#" class="game-card hot">
+                                        <img src="images/hot/game1.jpg" alt="" />
+                                        <span class="game-name">Pragmatic Play</span>
+                                    </a>
+
+                                    <a href="#" class="game-card">
+                                        <img src="images/hot/game2.jpg" alt="" />
+                                        <span class="game-name">Evolution</span>
+                                    </a>
+
+                                    <a href="#" class="game-card hot">
+                                        <img src="images/hot/game3.jpg" alt="" />
+                                        <span class="game-name">JILI</span>
+                                    </a>
+
+                                    <a href="#" class="game-card">
+                                        <img src="images/hot/game4.jpg" alt="" />
+                                        <span class="game-name">PG Soft</span>
+                                    </a>
+
+                                    <a href="#" class="game-card hot">
+                                        <img src="images/hot/game3.jpg" alt="" />
+                                        <span class="game-name">JILI</span>
+                                    </a>
+
+                                    <a href="#" class="game-card hot">
+                                        <img src="images/hot/game6.jpg" alt="" />
+                                        <span class="game-name">CQ9</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
                         <a href="#" class="view-all">
                             View All
 
                             <i class="fas fa-arrow-right"></i>
                         </a>
-</section>
+                    </section>
 
-                <!-- Providers -->
-                <section class="provider-section">
-                    <div class="section-header">
-                        <div class="section-title">
-                            <i class="fas fa-cubes"></i>
+                    <!-- Providers -->
+                    <section class="provider-section">
+                        <div class="section-header">
+                            <div class="section-title">
+                                <i class="fas fa-cubes"></i>
 
-                            <h2>Game Providers</h2>
+                                <h2>Game Providers</h2>
+                            </div>
+
+                            <div class="section-nav">
+                                <button class="provider-prev">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+
+                                <button class="provider-next">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
                         </div>
 
-                        <div class="section-nav">
-                            <button class="provider-prev">
-                                <i class="fas fa-chevron-left"></i>
-                            </button>
+                        <div class="provider-slider">
+                            <div class="provider-track">
+                                <a href="#" class="provider-card">
+                                    <img src="images/providers/allbet 1.png" alt="Allbet" />
+                                    <span>168 Games</span>
+                                </a>
 
-                            <button class="provider-next">
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
+                                <a href="#" class="provider-card">
+                                    <img src="images/providers/betsoft01.png" alt="BETSOFT" />
+                                    <span>92 Games</span>
+                                </a>
+
+                                <a href="#" class="provider-card">
+                                    <img src="images/providers/botcas1m 1.png" alt="Fair Guaranteed" />
+                                    <span>58 Games</span>
+                                </a>
+
+                                <a href="#" class="provider-card">
+                                    <img src="images/providers/casino_dg_en-1 1.png" alt="Dreamgaming" />
+                                    <span>76 Games</span>
+                                </a>
+
+                                <a href="#" class="provider-card">
+                                    <img src="images/providers/ct855 1.png" alt="CT855" />
+                                    <span>45 Games</span>
+                                </a>
+
+                                <a href="#" class="provider-card">
+                                    <img src="images/providers/ezgif.com-gif-maker 1.png" alt="Gold Diamond Gaming" />
+                                    <span>38 Games</span>
+                                </a>
+
+                                <a href="#" class="provider-card">
+                                    <img src="images/providers/ftr-logo-wm 1.png" alt="WM Casino" />
+                                    <span>64 Games</span>
+                                </a>
+
+                                <a href="#" class="provider-card">
+                                    <img src="images/providers/fungaming 1.png" alt="Fungamingr" />
+                                    <span>55 Games</span>
+                                </a>
+
+                                <a href="#" class="provider-card">
+                                    <img src="images/providers/kgolddeluxe-icon 1.png" alt="Gold Deluxe" />
+                                    <span>55 Games</span>
+                                </a>
+
+                                <a href="#" class="provider-card">
+                                    <img src="images/providers/logo_ag 1.png" alt="Asia Gaming" />
+                                    <span>55 Games</span>
+                                </a>
+
+                                <a href="#" class="provider-card">
+                                    <img src="images/providers/logo-01 1.png" alt="998Bet" />
+                                    <span>55 Games</span>
+                                </a>
+
+                                <a href="#" class="provider-card">
+                                    <img src="images/providers/logocq9 1.png" alt="CQ9" />
+                                    <span>55 Games</span>
+                                </a>
+
+                                <a href="#" class="provider-card">
+                                    <img src="images/providers/maxbet-logo-png-4 1.png" alt="Maxbet" />
+                                    <span>55 Games</span>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="provider-slider">
-                        <div class="provider-track">
-                            <a href="#" class="provider-card">
-                                <img src="images/providers/allbet 1.png" alt="Allbet" />
-                                <span>168 Games</span>
-                            </a>
-
-                            <a href="#" class="provider-card">
-                                <img src="images/providers/betsoft01.png" alt="BETSOFT" />
-                                <span>92 Games</span>
-                            </a>
-
-                            <a href="#" class="provider-card">
-                                <img src="images/providers/botcas1m 1.png" alt="Fair Guaranteed" />
-                                <span>58 Games</span>
-                            </a>
-
-                            <a href="#" class="provider-card">
-                                <img src="images/providers/casino_dg_en-1 1.png" alt="Dreamgaming" />
-                                <span>76 Games</span>
-                            </a>
-
-                            <a href="#" class="provider-card">
-                                <img src="images/providers/ct855 1.png" alt="CT855" />
-                                <span>45 Games</span>
-                            </a>
-
-                            <a href="#" class="provider-card">
-                                <img src="images/providers/ezgif.com-gif-maker 1.png" alt="Gold Diamond Gaming" />
-                                <span>38 Games</span>
-                            </a>
-
-                            <a href="#" class="provider-card">
-                                <img src="images/providers/ftr-logo-wm 1.png" alt="WM Casino" />
-                                <span>64 Games</span>
-                            </a>
-
-                            <a href="#" class="provider-card">
-                                <img src="images/providers/fungaming 1.png" alt="Fungamingr" />
-                                <span>55 Games</span>
-                            </a>
-
-                            <a href="#" class="provider-card">
-                                <img src="images/providers/kgolddeluxe-icon 1.png" alt="Gold Deluxe" />
-                                <span>55 Games</span>
-                            </a>
-
-                            <a href="#" class="provider-card">
-                                <img src="images/providers/logo_ag 1.png" alt="Asia Gaming" />
-                                <span>55 Games</span>
-                            </a>
-
-                            <a href="#" class="provider-card">
-                                <img src="images/providers/logo-01 1.png" alt="998Bet" />
-                                <span>55 Games</span>
-                            </a>
-
-                            <a href="#" class="provider-card">
-                                <img src="images/providers/logocq9 1.png" alt="CQ9" />
-                                <span>55 Games</span>
-                            </a>
-
-                            <a href="#" class="provider-card">
-                                <img src="images/providers/maxbet-logo-png-4 1.png" alt="Maxbet" />
-                                <span>55 Games</span>
-                            </a>
-                        </div>
-                    </div>
 
 
-                </section>
-            </main>
+                    </section>
+</main>
 
             <!-- =========================
                     FOOTER
@@ -1252,7 +1308,7 @@
                 </a>
 
                 <a href="#" class="nav-item">
-                    <i class="fas fa-home"></i>
+                    <img src="images/iconmenu/iconsport.png" />
                     <span>Sportbook</span>
                 </a>
 
@@ -1262,19 +1318,20 @@
                 </a>
 
                 <a href="#" class="nav-item">
-                    <i class="fas fa-gift"></i>
+                    <img src="images/iconmenu/iconcasino.png" />
                     <span>Casino</span>
                 </a>
 
                 <a href="#" class="nav-item">
-                    <i class="fas fa-headset"></i>
-                    <span>Support</span>
+                    <i class="fas fa-search"></i>
+                    <span>Search</span>
                 </a>
 
             </nav>
         </div>
     </div>
 
+        </div>
     <script src="script.js"></script>
     <script src="menu-script.js"></script>
 </body>
