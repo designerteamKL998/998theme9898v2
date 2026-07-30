@@ -264,20 +264,22 @@
         flex: 0 0 85px; /* lebih pendek */
         min-width: 85px;
         margin: 15px 0;
+        display:none;
     }
 
-        #mobile-search-placeholder .header-search input {
-            width: 65px;
-            border: none;
-            background: transparent;
-            text-align: center;
-            color: #fff !important;
-        }
+    
+    #mobile-search-placeholder .header-search input {
+        width: 65px;
+        border: none;
+        background: transparent;
+        text-align: center;
+        color: #fff !important;
+    }
 
         #mobile-search-placeholder .header-search {
             width: 85px;
             height: 72px;
-            display: flex;
+            display: none;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -303,8 +305,21 @@
 
     .mega-dropdown {
         width: 450px;
-        right: 0;
+        right: -15px;
     }
+
+        .mega-dropdown::before {
+            content: "";
+            position: absolute;
+            top: -8px;
+            right: 24px;
+            width: 14px;
+            height: 14px;
+            background: #fff;
+            border-top: 1px solid #63c7c7;
+            border-left: 1px solid #63c7c7;
+            transform: rotate(45deg);
+        }
 
     .dropdown-grid {
         grid-template-columns: repeat(2,1fr);
@@ -346,18 +361,15 @@
         .mega-dropdown {
             position: fixed;
             top: 50px;
-            left: 15px;
-            right: 15px;
-            width: 80%;
+            right:50px;
+            width: 50%;
             padding: 15px;
         }
-
             .mega-dropdown::before {
-                display: none;
+                right: 40px;
             }
 
-
-        .dropdown-card {
+                .dropdown-card {
             min-height: 60px;
             justify-content: flex-start;
         }
@@ -620,7 +632,8 @@
     }
 
     .mega-dropdown {
-        top: 100px;
+        top: 44px;
+        width:80%;
     }
 
         .mobile-bottom-nav .deposit-btn {
