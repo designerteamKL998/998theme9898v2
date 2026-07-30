@@ -42,6 +42,10 @@
     color: #1A535C;
 }
 
+    .category-item span{
+        white-space:nowrap;
+    }
+
     .category-item i {
         font-size: 18px;
         color: #1A535C;
