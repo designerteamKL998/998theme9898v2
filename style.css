@@ -12,9 +12,10 @@ html,
 body {
     width: 100%;
     height: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Poppins", sans-serif;
     background: #edf7f4;
     overflow: hidden;
+    font-size:14px;
 }
 
 a {
@@ -31,8 +32,47 @@ button {
     border: 0;
     background: none;
     cursor: pointer;
+    font-family: "Poppins", sans-serif;
 }
 
+/*=========================================
+            POPPINS FONT
+=========================================*/
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../font/poppins/Poppins-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../font/poppins/Poppins-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../font/poppins/Poppins-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../font/poppins/Poppins-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../font/poppins/Poppins-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+}
 /* ===================================================
    UTILITY
 =================================================== */
@@ -63,6 +103,11 @@ button {
 
 .w-100 {
     width: 100%;
+}
+
+.w1400 {
+    max-width:1600px;
+    margin:auto;
 }
 
 /* ===================================================
@@ -105,6 +150,10 @@ button {
         vertical-align: middle;
     }
 
+#sidebar.close .sidebar-promotion {
+    padding: 0;
+}
+
 .sidebar-menu a:hover .icon {
     transform: rotate(-8deg) scale(1.08);
 }
@@ -119,7 +168,7 @@ button {
 #content {
     flex: 1;
     overflow: auto;
-    padding: 20px;
+    padding: 5px 10px;
     background: #edf7f4;
 }
 
@@ -137,8 +186,8 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    border-bottom: 1px solid #e5efec;
+    padding: 10px 5px;
+    border-bottom: 0px solid #e5efec;
 }
 
     .sidebar-logo img {
@@ -154,12 +203,13 @@ button {
     cursor: pointer;
     position: relative;
     z-index: 1001;
+    right:5px;
 }
 
 .sidebar-switch {
     display: flex;
     gap: 8px;
-    padding: 20px;
+    padding: 5px;
 }
 
     .sidebar-switch button {
@@ -176,16 +226,16 @@ button {
         }
 
 .sidebar-promotion {
-    padding: 0 20px;
+    padding: 0 5px;
 }
 
 .promo {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 14px;
+    padding: 10px 20px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     background: #fff;
     transition: 0.3s;
     background: #1a535c;
@@ -201,14 +251,35 @@ button {
         transform: translateY(-2px);
     }
 
+.menu-header {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0px;
+}
+
+.mobile-menu {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #1A535C;
+    font-size: 18px;
+}
 .menu-title {
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-size: 11px;
-    color: #94a8a5;
-    padding: 15px 20px 10px;
-    font-weight: bold;
+    width: 100%;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: #7b8b92;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    padding: 12px 20px 5px;
 }
 
     .menu-title::after {
@@ -216,6 +287,7 @@ button {
         flex: 1;
         height: 1px;
         background: #4fd8cf;
+        margin-left: 12px;
         opacity: 0.7;
     }
 
@@ -231,7 +303,7 @@ button {
         display: flex;
         align-items: center;
         gap: 14px;
-        height: 48px;
+        height: 40px;
         padding: 0 16px;
         border-radius: 10px;
         color: #1a535c;
@@ -373,15 +445,38 @@ button {
         height: 38px;
         width: 35px;
         padding: 0px;
+        margin: 0 auto 8px;
     }
 
         #sidebar.close .promo span {
             display: none;
         }
 
-    #sidebar.close .sidebar-menu a {
+    #sidebar.close .sidebar-menu {
+        padding: 0;
+    }
+    #sidebar.close .menu-header {
         justify-content: center;
     }
+
+    #sidebar.close .mobile-menu {
+        margin: 0 auto;
+        right:0px;
+    }
+
+        #sidebar.close .sidebar-menu a {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 6px;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #sidebar.close .sidebar-menu .icon {
+            width: auto;
+            margin: 0;
+        }
 
     #sidebar.close .sidebar-menu span {
         display: none;
