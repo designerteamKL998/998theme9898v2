@@ -44,7 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function buildSlider() {
 
-        const pageSize = window.innerWidth <= 768 ? 1 : 3;
+    const pageSize =
+        window.innerWidth <= 768 ? 1 :
+        window.innerWidth <= 1024 ? 3 : 4;
         const totalPages = Math.ceil(cards.length / pageSize);
 
         track.innerHTML = "";
@@ -241,18 +243,26 @@ document.querySelectorAll(".language-item").forEach(item => {
 });
 
 //search placeholer
+// Search placeholder
 const headerSearch = document.querySelector(".header-search");
-const header = document.querySelector("#header");
 const mobileSearch = document.querySelector("#mobile-search-placeholder");
+const categoryWrapper = document.querySelector(".category-wrapper");
 
 function moveSearch() {
-    if (window.innerWidth <= 768) {
+
+    if (window.innerWidth <= 1024) {
+
+        // Mobile → letak bawah banner
         mobileSearch.appendChild(headerSearch);
+
     } else {
-        header.insertBefore(headerSearch, document.querySelector(".header-right"));
+
+        // Desktop → letak dalam category wrapper
+        categoryWrapper.appendChild(headerSearch);
+
     }
+
 }
 
 moveSearch();
 window.addEventListener("resize", moveSearch);
-
