@@ -1,0 +1,180 @@
+﻿/*html,
+body {
+    background: url(images/mooncaketheme/bgmooncake26.png) no-repeat fixed !important;
+    background-size: cover !important;
+}*/
+
+#header {
+    background: url(images/mooncaketheme/headermoonckae26.png) top left no-repeat !important;
+    background-size: cover !important;
+}
+
+#sidebar {
+    background: url(images/mooncaketheme/sidebarmooncake26.jpg) no-repeat right bottom !important;
+    background-size: cover !important;
+}
+
+#content {
+    background: transparent !important;
+}
+
+.game-card {
+    background: linear-gradient(145deg, #5a3400 0%, #b86b00 25%, #f4a300 55%, #ffd86b 80%, #fff6d5 100%) !important;
+    padding: 3px !important;
+}
+
+    .game-card img {
+        border-radius: 16px !important;
+    }
+
+.category-wrapper {
+    background: url(images/mooncaketheme/ctwrapperbgmooncake26.png) no-repeat center !important;
+    background-size: cover !important;
+}
+
+.game-section {
+    background: url(images/mooncaketheme/sectiongame-mooncake26.png) no-repeat top center !important;
+    background-size: 100% !important;
+}
+
+.section-title::after {
+    content: "";
+    width: 50px;
+    height: 38px;
+    background: url("images/mooncaketheme/titleaftermooncake.png") no-repeat center;
+    background-size: contain;
+    border-radius: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.merdeka-flag {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 83px;
+    background: url(images/mooncaketheme/overlapflag-moon26-bottom.png) no-repeat !important;
+    background-size: 100%;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
+    z-index: 1;
+    pointer-events: none;
+}
+
+.view-all {
+    background: url(images/mooncaketheme/buttonmooncake26.png) no-repeat center !important;
+    background-size: 100% !important;
+    border: 2px solid transparent !important;
+    padding: 13px 5px 10px 25px !important;
+    height: 65px !important;
+    width: 250px !important;
+}
+
+    .view-all:hover {
+        color: #fff !important;
+    }
+
+.promo.active,
+.deposit {
+    background: #df9000 !important;
+}
+
+.section-title i {
+    background: linear-gradient(180deg, #1a535c 0%, #22808f 50%, #df9000 100%) !important;
+}
+
+.overlay-theme {
+    position: relative;
+    display: block !important;
+}
+
+    .overlay-theme img {
+        position: absolute;
+        top: -24px;
+        left: -18px;
+        z-index: 2;
+        width: 300px;
+    }
+
+.mobile-menu {
+    color: #df9000 !important;
+}
+
+@media (max-width: 1024px) {
+    .overlay-theme {
+        display: none !important;
+    }
+
+    #header {
+        background: url(images/mooncaketheme/mobilemooncake-header26.jpg) bottom right no-repeat !important;
+        background-size: cover !important;
+    }
+
+    .view-all {
+        background: url(images/mooncaketheme/buttonmooncake26.png) no-repeat center !important;
+        background-size: 50% !important;
+    }
+
+    .mobile-bottom-nav {
+        background: url(images/mooncaketheme/bgmenumobile.jpg) bottom center !important;
+        background-size: cover;
+    }
+
+        .mobile-bottom-nav .nav-item {
+            color: #fde8b0 !important;
+        }
+
+            .mobile-bottom-nav .nav-item img {
+                filter: brightness(0) saturate(100%) invert(87%) sepia(30%) saturate(550%) hue-rotate(3deg) brightness(110%) contrast(90%) !important;
+            }
+
+        .mobile-bottom-nav .deposit-btn {
+            background: url(images/mooncaketheme/bgdpmooncake26.png) bottom center !important;
+            background-size: 100% !important;
+            box-shadow: unset !important;
+            border: 0px solid red !important;
+            border-radius: 0px !important;
+        }
+
+    .game-section {
+        background: url(images/mooncaketheme/bgcontent-sectionmooncake-mobile.jpg) no-repeat top center !important;
+        background-size: cover !important;
+    }
+
+    .mobile-provider-btn,
+    .mobile-filter-btn {
+        background: linear-gradient(to bottom, #0e4e3a 0%, #0c4b38 45%, #0e4e3a 100%) !important;
+    }
+
+    .promo-dots span {
+        background: #df9000 !important;
+    }
+
+        .promo-dots span.active {
+            background: #0c4b38 !important;
+        }
+}
+
+@media (max-width: 768px) {
+    .view-all {
+        width: 25% !important;
+        background-size: 100% !important;
+    }
+
+    .section-title {
+        gap: 0px !important;
+    }
+
+    .mobile-bottom-nav .deposit-btn {
+        width: 70px !important;
+        height: 70px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .view-all {
+        width: 43% !important;
+        background-size: 100% !important;
+    }
+}

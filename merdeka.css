@@ -1,0 +1,148 @@
+﻿html,
+body {
+    /*background: url(images/merdekatheme/bgmerdeka.jpg) no-repeat fixed !important;
+    background-size: cover !important;*/
+}
+
+#header {
+    background: url(images/merdekatheme/flagheadertopmerd26a.png) top left no-repeat !important;
+    background-size: cover !important;
+}
+
+#sidebar {
+    background: url(images/merdekatheme/sidebarmerdeka.jpg) no-repeat center !important;
+    background-size: cover !important;
+}
+
+.menu-title::after {
+    height: 15px !important;
+    background: url(images/merdekatheme/titlemerd26.png) no-repeat center !important;
+}
+
+.game-card {
+    background: linear-gradient(145deg, #081f4d 0%, #103e8a 30%, #c1121f 70%, #f8f9fa 100%) !important;
+    padding: 3px !important;
+}
+
+    .game-card img {
+        border-radius: 16px !important;
+    }
+
+.category-wrapper {
+    background: url(images/merdekatheme/ctwrapperbgmerdeka.png) no-repeat center !important;
+    background-size: cover !important;
+}
+
+.section-title::after {
+    content: "";
+    width: 50px;
+    height: 38px;
+    background: url(images/merdekatheme/flagmerdeka26.gif) no-repeat center !important;
+    border-radius: 50px;
+}
+
+.game-section {
+    background: url(images/merdekatheme/sectiongame-merdeka26.png) no-repeat center !important;
+    background-size: cover !important;
+}
+
+.merdeka-flag {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    background: url(images/merdekatheme/overlapflag.png);
+    background-size: 100%;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
+    z-index: 20;
+    pointer-events: none;
+}
+
+.promo,
+.sidebar-switch button.active {
+    background: #1a285c !important;
+}
+
+    .promo.active,
+    .deposit,
+    .mobile-bottom-nav .deposit-btn {
+        background: #a30000 !important;
+    }
+
+.view-all {
+    background: url(images/merdekatheme/buttonmerd26.png) no-repeat center !important;
+    background-size: 100% !important;
+    color: #1a285c !important;
+    border: 2px solid transparent !important;
+}
+/* ---------------------------------------------------------Mobile----------------------------------------------------------- */
+@media (max-width: 768px) {
+    html,
+    body {
+        background: #edf7f4 !important;
+        background-size: cover !important;
+    }
+
+    .sidebar-menu .icon {
+        background: #1a285c !important;
+    }
+
+    .game-section {
+        background: url(images/merdekatheme/sectiongame-merdeka26m.png) no-repeat center !important;
+        background-size: cover !important;
+    }
+
+    #content {
+        background: url(images/merdekatheme/m-bgmerdeka26.png) no-repeat fixed !important;
+        background-size: cover !important;
+    }
+
+    #header {
+        background: url(images/merdekatheme/headerbg-m.png) no-repeat center !important;
+        background-size: cover !important;
+    }
+
+    .mobile-bottom-nav,
+    .mobile-provider-btn,
+    .mobile-filter-btn {
+        background: linear-gradient(to bottom, #171a79 0%, #100f69 45%, #082354 100%) !important;
+    }
+
+        .mobile-bottom-nav .nav-item {
+            color: #ffeb3b !important;
+        }
+
+            .mobile-bottom-nav .nav-item.deposit-btn {
+                color: #fff !important;
+            }
+
+            .mobile-bottom-nav .nav-item img {
+                filter: brightness(0) saturate(100%) invert(88%) sepia(76%) saturate(1422%) hue-rotate(357deg) brightness(103%) contrast(102%) !important;
+            }
+
+    .menu-title::after {
+        background: url(images/merdekatheme/titlemerd26.png) no-repeat left !important;
+    }
+
+    .merdeka-flag {
+        height: 40px !important;
+    }
+
+    .view-all {
+        background: none !important;
+        background-size: 100% !important;
+        color: #c5c3c3 !important;
+        border: 0px solid transparent !important;
+    }
+
+    .wallet {
+        padding: 0 16px 0px 16px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .merdeka-flag {
+        height: 50px !important;
+    }
+}
