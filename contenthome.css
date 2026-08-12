@@ -25,7 +25,7 @@
 }
 
     #game-category::-webkit-scrollbar {
-        display: none;
+        height: 0;
     }
 
 .category-item {
@@ -42,10 +42,6 @@
     color: #1A535C;
 }
 
-    .category-item span{
-        white-space:nowrap;
-    }
-
     .category-item i {
         font-size: 18px;
         color: #1A535C;
@@ -55,6 +51,9 @@
         width:22px;
     }
 
+    .category-item span {
+        white-space: nowrap;
+    }
     .category-item:hover i, .category-item:hover {
         box-shadow: 0 8px 20px rgba(0,0,0,.08);
         background: #1a535c;
@@ -128,7 +127,7 @@
 .game-card {
     background: #fff;
     border-radius: 16px;
-    overflow: hidden;
+    overflow: visible;
     box-shadow: 0 8px 20px rgba(0,0,0,.06);
     transition: .25s;
     position: relative;
@@ -143,7 +142,8 @@
         width: 100%;
         aspect-ratio: 3/4;
         object-fit: cover;
-        height:100%;
+        height: 100%;
+        border-radius: 16px;
     }
 
     /* HOT */
@@ -184,6 +184,7 @@
     .game-card.hot.new::after {
         left: 8px;
     }
+
 
 
 .game-name {
@@ -425,5 +426,111 @@
         font-size: 12px;
         color: #FF6B6B;
     }
+
+.mobile-provider-filter {
+    display: none;
+}
+
+.provider-popup {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    border-radius: 24px 24px 0 0;
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform .35s cubic-bezier(.22,1,.36,1), opacity .3s ease, visibility .35s;
+    z-index: 9999;
+}
+
+    .provider-popup.show {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+.provider-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.35);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 9998;
+}
+
+    .provider-overlay.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+/*=========================   MOBILE LOTTERY BANNER   =========================*/
+
+.mobile-lottery-banner {
+    margin: 16px 0 20px;
+}
+
+.lottery-banner-card {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 180px;
+    border-radius: 18px;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+    .lottery-banner-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .lottery-banner-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient( to top, rgba(0,0,0,.75), rgba(0,0,0,.2) 50%, transparent );
+    }
+
+.lottery-banner-content {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    color: #fff;
+    z-index: 2;
+}
+
+    .lottery-banner-content h3 {
+        margin: 0 0 6px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .lottery-banner-content p {
+        margin: 0 0 12px;
+        font-size: 13px;
+        opacity: .9;
+    }
+
+.lottery-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    padding: 0 18px;
+    border-radius: 20px;
+    background: #fff;
+    color: #222;
+    font-size: 13px;
+    font-weight: 600;
+}
+
 
 
