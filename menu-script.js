@@ -266,3 +266,40 @@ function moveSearch() {
 
 moveSearch();
 window.addEventListener("resize", moveSearch);
+
+
+
+/*==================================================
+    MOBILE PROVIDER FILTER
+==================================================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const btn = document.querySelector(".mobile-provider-btn"),
+          sheet = document.querySelector(".mobile-provider-sheet"),
+          overlay = document.querySelector(".provider-overlay");
+
+    if (!btn || !sheet || !overlay) return;
+
+    const toggle = (show) => {
+        sheet.classList.toggle("show", show);
+        overlay.classList.toggle("show", show);
+        btn.classList.toggle("active", show);
+        document.body.classList.toggle("provider-open", show);
+    };
+
+    btn.onclick = () => toggle(true);
+    overlay.onclick = () => toggle(false);
+
+    document.querySelectorAll(".mobile-provider-item").forEach(item => {
+        item.onclick = () => {
+            document.querySelector(".mobile-provider-item.active")?.classList.remove("active");
+            item.classList.add("active");
+
+            document.querySelector(`.provider-item[data-provider="${item.dataset.provider}"]`)?.click();
+
+            toggle(false);
+        };
+    });
+
+});
